@@ -1,8 +1,12 @@
 // Perform the following actions:
  
 // 1. Update the 'Coffee' item to say 'Fair Trade Coffee'
-
+const list = document.getElementsByTagName('ul')[0];
+list.getElementsByTagName("li")[0].innerHTML = 'Fair Trade Coffee';
 // 2. Remove 'Twinkies' from the list
+
+ 
+  list.removeChild(list.children[3];
 
 // 3. Add an item 'Cheese Whiz'
 
