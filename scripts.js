@@ -20,10 +20,22 @@ li.innerText = "Cheese Whiz"
 
 
 // 4. Clear the list and programmatically add items from the array ['protein powder', 'muscle milk', 'power bars']
-// list.innerHTML = "";
-// let newItems = ['protein powder', 'muscle milk', 'power bars'];
+list.innerHTML = "";
+let newItems = ['protein powder', 'muscle milk', 'power bars'];
+newItems.forEach((item) => {
+    let li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+})
+//Below was my first attempt and returned only the words side-by-side
+//  let addArray = newItems.map(li => {
+//     ul.append(li)
+// }
+//  );
+// console.log(addArray);
 
-// newItems.map((a)=>{
+
+//newItems.map((a)=>{
 //Follow same steps in #3 above (lines 12-14)
 // }) 
  
