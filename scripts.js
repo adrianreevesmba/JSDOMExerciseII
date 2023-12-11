@@ -45,4 +45,6 @@ newItems.forEach((item) => {
 
 
 // 5. Add the class 'important' to the muscle milk item.
+const muscle = document.querySelector('ul').children[1];
+muscle.classList.add('important');
 
